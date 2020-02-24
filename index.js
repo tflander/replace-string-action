@@ -6,7 +6,7 @@ try {
   const replaceWith = core.getInput('replace-with')
   const flags = core.getInput('flags')
 
-  console.log(string);
+  console.log("string: " + string);
 
   const regex = new RegExp(pattern, flags);
 
