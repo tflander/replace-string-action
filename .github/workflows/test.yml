@@ -11,7 +11,8 @@ jobs:
         uses: ./
         id: test
         with:
-          string: 'aasdfa/v1.0.1'
+          # string: 'aasdfa/v1.0.1'
+          string: ${GITHUB_REF}  
           pattern: '[\w\d/]*v(\d+(?:\.\d+)*)'
           replace-with: '$1'
       - name: Check equality
