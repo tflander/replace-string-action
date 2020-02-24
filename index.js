@@ -6,6 +6,8 @@ try {
   const replaceWith = core.getInput('replace-with')
   const flags = core.getInput('flags')
 
+  console.log(string);
+
   const regex = new RegExp(pattern, flags);
 
   core.setOutput('replaced', string.replace(regex, replaceWith));
